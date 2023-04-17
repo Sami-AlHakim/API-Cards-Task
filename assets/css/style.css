@@ -1,0 +1,132 @@
+/* =====Start Global Rules===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --main-color: #5d64fa;
+  --second-color: #b068f6;
+  --black-color: #232125;
+  --subtext-color: #999;
+}
+body {
+  background-color: var(--black-color);
+  color: white;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* Small Screen */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium Screen */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large Screen */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* =====Ends Global Rules===== */
+
+/* =====Start Styling===== */
+.input {
+  width: 700px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 35px auto 50px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--second-color);
+}
+.input input {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: white;
+  outline: none;
+  flex: 1;
+}
+.input input::placeholder {
+  color: var(--subtext-color);
+}
+.input img {
+  cursor: pointer;
+}
+.cards-holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 32px;
+}
+.cards-holder .card {
+  background-color: rgba(255, 255, 255, 0.07);
+  padding: 25px 32px;
+  border-radius: 16px;
+  box-shadow: 1px 1px 12px rgba(153, 153, 153, 0.17);
+  transition: .3s;
+}
+.cards-holder .card:hover {
+  transform: scale(1.04);
+  box-shadow: 1px 1px 25px rgba(93, 101, 250, 0.5);
+}
+.cards-holder .card img {
+  width: 100%;
+  margin-bottom: 16px;
+  height: 200px;
+  border-radius: 16px;
+}
+.cards-holder .card h2 {
+  font-size: 24px;
+  color: var(--main-color);
+  margin-bottom: 8px;
+}
+.cards-holder .card span {
+  color: var(--subtext-color);
+}
+.cards-holder .card p {
+  margin: 20px 0;
+  font-weight: 300;
+  line-height: 2;
+}
+.cards-holder .card h4 {
+  font-size: 24px ;
+  font-weight: 200;
+  color: var(--second-color);
+  margin-bottom: 20px;
+}
+.btns{
+  display: flex;
+  margin: 64px auto;
+  gap: 64px;
+  width: fit-content;
+}
+.show-btn {
+  padding: 10px 16px;
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--main-color);
+  cursor: pointer;
+  transition: .3s;
+}
+.show-btn:hover {
+  opacity: .95;
+  transform: scale(1.03);
+}
+#next {
+  order: 1
+}
+
+/* =====End Styling===== */
